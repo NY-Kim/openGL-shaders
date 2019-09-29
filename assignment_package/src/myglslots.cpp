@@ -1,8 +1,10 @@
 #include "mygl.h"
+#include "shaderprograms/surfaceshader.h"
 
 void MyGL::slot_setCurrentSurfaceShaderProgram(int s)
 {
     mp_progSurfaceCurrent = m_surfaceShaders[s].get();
+    mp_progSurfaceCurrent->setCameraPosition(m_camera.eye);
 }
 
 void MyGL::slot_setCurrentPostprocessShaderProgram(int s)

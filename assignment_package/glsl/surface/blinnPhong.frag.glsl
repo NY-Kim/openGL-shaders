@@ -21,6 +21,21 @@ layout(location = 0) out vec3 out_Col;//This is the final output color that you 
 
 void main()
 {
-    // TODO Homework 4
-    out_Col = vec3(0, 0, 0);
+    vec4 diffuse_color = texture(u_Texture, fs_UV);
+
+    float diffuse_term = dot(normalize(fs_Nor), normalize(fs_LightVec));
+    diffuse_term = clamp(diffuse_term, 0, 1);
+    float ambient_term = 0.2f;
+
+    vec4 view_vector = fs_CameraPos - fs_Pos;
+    vec4 light_vector = fs_LightVec;
+    vec4 halfway_vector = normalize((view_vector + light_vector) / 2);
+
+    float exp = 50.0f;
+    vec4 surface_normal = normalize(fs_Nor);
+    float specular_intensity = max(pow(dot(halfway_vector, surface_normal), exp), 0);
+
+    float light_intensity = diffuse_term + ambient_term + specular_intensity; 
+
+    out_Col = vec3(diffuse_color.rgb * light_intensity);
 }

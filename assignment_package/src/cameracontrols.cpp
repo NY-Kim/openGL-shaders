@@ -29,6 +29,7 @@ void MyGL::mouseMoveEvent(QMouseEvent *e)
         m_camera.TranslateAlongRight(-diff.x);
         m_camera.TranslateAlongUp(diff.y);
     }
+    mp_progSurfaceCurrent->setCameraPosition(m_camera.eye);
 }
 
 void MyGL::wheelEvent(QWheelEvent *e)

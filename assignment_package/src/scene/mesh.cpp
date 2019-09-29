@@ -22,38 +22,38 @@ void Mesh::createCube(const char *textureFile, const char *bgTextureFile)
     std::vector<glm::vec4> pos {// front quad
                                 glm::vec4(1, 1, 1, 1),
                                 glm::vec4(1, 1, -1, 1),
-                                glm::vec4(1, -1, 1, 1),
                                 glm::vec4(1, -1, -1, 1),
+                                glm::vec4(1, -1, 1, 1),
 
                                 // right quad
                                 glm::vec4(-1, 1, 1, 1),
                                 glm::vec4(-1, 1, -1, 1),
-                                glm::vec4(1, 1, 1, 1),
                                 glm::vec4(1, 1, -1, 1),
+                                glm::vec4(1, 1, 1, 1),
 
                                 // back quad
                                 glm::vec4(-1, -1, 1, 1),
                                 glm::vec4(-1, -1, -1, 1),
-                                glm::vec4(-1, 1, 1, 1),
                                 glm::vec4(-1, 1, -1, 1),
+                                glm::vec4(-1, 1, 1, 1),
 
                                 // left quad
                                 glm::vec4(1, -1, 1, 1),
                                 glm::vec4(1, -1, -1, 1),
-                                glm::vec4(-1, -1, 1, 1),
                                 glm::vec4(-1, -1, -1, 1),
+                                glm::vec4(-1, -1, 1, 1),
 
                                 // up quad
                                 glm::vec4(-1, -1, 1, 1),
                                 glm::vec4(-1, 1, 1, 1),
-                                glm::vec4(1, -1, 1, 1),
                                 glm::vec4(1, 1, 1, 1),
+                                glm::vec4(1, -1, 1, 1),
 
                                 // down quad
                                 glm::vec4(1, 1, -1, 1),
                                 glm::vec4(-1, 1, -1, 1),
-                                glm::vec4(1, -1, -1, 1),
-                                glm::vec4(-1, -1, -1, 1)};
+                                glm::vec4(-1, -1, -1, 1),
+                                glm::vec4(1, -1, -1, 1)};
 
     std::vector<glm::vec4> nor {// front quad
                                 glm::vec4(1, 0, 0, 0),

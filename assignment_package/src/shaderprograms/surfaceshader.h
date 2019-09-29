@@ -10,6 +10,8 @@ public:
     int attrNor; // A handle for the "in" vec4 representing vertex normal in the vertex shader
     int attrUV; // A handle for the "in" vec2 representing the UV coordinates in the vertex shader
 
+    int unifCamera; // A handle for the "uniform" vec3 representing the camera's position
+
     int unifModel; // A handle for the "uniform" mat4 representing model matrix in the vertex shader
     int unifModelInvTr; // A handle for the "uniform" mat4 representing inverse transpose of the model matrix in the vertex shader
     int unifView; // A handle for the "uniform" mat4 representing the view matrix in the vertex shader
@@ -29,4 +31,6 @@ public:
     void setModelMatrix(const glm::mat4 &model);
     // Pass the given Projection * View matrix to this shader on the GPU
     void setViewProjMatrix(const glm::mat4 &v, const glm::mat4 &p);
+    // Pass the given camera position to this shader on the GPU
+    void setCameraPosition(const glm::vec3 &cameraPos);
 };
