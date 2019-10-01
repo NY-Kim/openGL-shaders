@@ -1,0 +1,13 @@
+2019-09-28 04:29PM Looked up how MatCap shaders work and how to compute them
+https://medium.com/@cyrilltoboe/world-space-matcap-shading-1d8f2a0ee296
+https://forum.unity.com/threads/writing-a-matcap-shader.518949/
+
+2019-09-30 11:58PM Looked up noise functions provided in the HW description link
+
+2019-10-01 02:57AM Looked up how to use smoothstep
+https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml
+
+Other minor problems: 
+
+- Cube had a triangular hole, since I inputted the coordinates in the wrong order
+- Capping the fs_Nor value makes Mario consist of cube components
