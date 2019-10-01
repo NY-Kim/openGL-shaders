@@ -4,6 +4,7 @@
 void MyGL::slot_setCurrentSurfaceShaderProgram(int s)
 {
     mp_progSurfaceCurrent = m_surfaceShaders[s].get();
+    // initalize with shader applied
     mp_progSurfaceCurrent->setCameraPosition(m_camera.eye);
 }
 

@@ -1,0 +1,3 @@
+1. Uniform variables are variables that are constant among all instances of the program. Variables that are passed in from the previous stage has a 'in' keyword, and variables that are passed out to the next pipeline is defined with a 'out' keyword. Vertex shaders pass data to a fragment shader using in and out keywords through VBOs(vertex buffer objects).
+
+2. attrPos and unifModel are handles for objects each representing vertex positions and model matrix in the vertex shader. These handles are linked to manipulate specific OpenGL objects like pointers. These handles are given values using glGetAttributeLocation functions. The function finds the variable that matches the variable name in the shader program, and assigns it.  
