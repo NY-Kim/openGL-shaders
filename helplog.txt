@@ -1,3 +1,5 @@
+HW 4
+
 2019-09-28 04:29PM Looked up how MatCap shaders work and how to compute them
 https://medium.com/@cyrilltoboe/world-space-matcap-shading-1d8f2a0ee296
 https://forum.unity.com/threads/writing-a-matcap-shader.518949/
@@ -11,3 +13,14 @@ Other minor problems:
 
 - Cube had a triangular hole, since I inputted the coordinates in the wrong order
 - Capping the fs_Nor value makes Mario consist of cube components
+
+HW 5
+
+2019-10-14 2:27AM: Looked up distance function for glsl
+https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/distance.xhtml
+
+2019-10-14 3:16AM Looked up how to get natural logarithm for gaussian shading
+https://relativity.net.au/gaming/glsl/Built-inExponential.html
+
+2019-10-15 11:20PM: Looked up formula for the sober filter
+https://en.wikipedia.org/wiki/Sobel_operator

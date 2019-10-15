@@ -19,7 +19,7 @@ void main()
 
     float x = fs_Nor[0];
     float y = fs_Nor[1];
-    fs_UV = vec2((x + 1) * 0.5, (y + 1) * 0.5);
+    fs_UV = vec2(x * 0.5 + 0.5, y * 0.5 + 0.5);
 
     vec4 modelposition = u_Model * vs_Pos;
     gl_Position = u_Proj * u_View * modelposition;

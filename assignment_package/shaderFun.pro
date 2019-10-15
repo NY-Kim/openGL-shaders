@@ -52,3 +52,7 @@ address_sanitizer {
 HEADERS +=
 
 SOURCES +=
+
+DISTFILES += \
+    glsl/post/sobel.frag.glsl \
+    glsl/post/try1.frag
